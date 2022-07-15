@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&display=swap')
+
+$Blue: hsl(246, 80%, 60%)
+
+$orange: hsl(15, 100%, 70%)
+$Softblue: hsl(195, 74%, 62%)
+$Lightred: hsl(348, 100%, 68%)
+$Limegreen: hsl(145, 58%, 55%)
+$Violet: hsl(264, 64%, 52%)
+$Softorange: hsl(43, 84%, 65%)
+
+$Verydarkblue: hsl(226, 43%, 10%)
+$Darkblue: hsl(235, 46%, 20%)
+$Desaturatedblue: hsl(235, 45%, 61%)
+$PaleBlue: hsl(236, 100%, 87%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Libre Franklin', sans-serif
+    font-family: 'Poppins', sans-serif
+    font-family: 'Rubik', sans-serif
+    background-color: $Verydarkblue
+    color: #fff
+    display: flex
+    justify-content: center
+
+.container
+    display: flex
+    margin: 160px 0 0 0px
+
+.top
+    display: flex
+
+.bottom
+    display: flex
+
+.owner
+    background-color: $Darkblue
+    width: 250px
+    height: 470px
+    border-radius: 10px
+    margin: 0 25px 0  0
+
+.profile
+    background-color: $Blue
+    padding: 30px 0 80px 20px
+    height: 315px
+    width: 250px
+    border-radius: 10px
+    p
+        font-size: 13px
+        color: $PaleBlue
+        margin-bottom: 10px
+    h1
+        font-weight: 100
+        font-size: 40px
+        padding-right: 20px
+        color: #e1ddf5
+    img
+        width: 65px
+        border: 3px solid #fff
+        border-radius: 60px
+        margin: 0 0 30px 0
+
+#timeline
+    padding: 10px 0 20px 30px
+    line-height: 45px
+    color: $Desaturatedblue
+    cursor: pointer
+    display: inline-block
+    p:hover
+        color: #fff
+
+.logobox
+    margin: 0 25px 50px 0
+    border-radius: 10px
+    width: 250px
+    height: 200px
+    overflow: hidden
+    img
+        margin: -8px 0 0 170px
+        object-fit: cover
+        height: 60px
+    
+    .option
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 30px
+        img
+            height: 5px
+            margin: 0 10px 0 0
+        img:hover
+            cursor: pointer
+        p
+            font-size: 14px
+            font-weight: 500
+
+    .time
+        h1
+            font-weight: 100
+            font-size: 45px
+            margin-bottom: 10px
+        p
+            color: $Desaturatedblue
+            font-size: 14px
+
+.work,.play,.study,.exercise,.social,.selfcare
+    background-color: $Darkblue
+    border-radius: 10px
+    height: 185px
+    width: 250px
+    margin-top: -20px
+    position: absolute
+    padding: 30px 20px 30px 30px
+
+.activity_box:hover
+    background-color: hsl(235, 35%, 30%)
+    cursor: pointer
+
+.orange
+    background-color: $orange
+
+.skyblue
+    background-color: $Softblue
+
+.red
+    background-color: $Lightred
+
+.green
+    background-color: $Limegreen
+
+.violet
+    background-color: $Violet
+
+.yellow
+    background-color: $Softorange
+
+@media screen and (max-width:425px)
+
+    .container
+        display: block
+        margin: 100px 0 0 0
+
+    .top,.bottom
+        display: block
+
+    .owner
+        width: 350px
+        height: 200px
+        margin: 0
+
+    .profile
+        padding: 30px
+        display: flex
+        width: 350px
+        height: 130px
+        h1
+            font-size: 24px
+        p
+            margin-top: 10px
+            line-height: 14px
+        img
+            height: 65px
+            margin: 0 20px 0 0
+
+    #timeline
+        display: flex
+        justify-content: space-between
+        padding-right: 30px
+        font-size: 18px
+
+    .logobox
+        width: 350px
+        height: 160px
+        margin-right: 0
+        img
+            margin-left: 270px
+        .option
+            margin-bottom: 15px
+        .time
+            display: flex
+            h1
+                font-size: 33px
+                margin-bottom: 0
+            #p1
+                margin: 10px 0 0 90px
+            #p2
+                margin: 10px 0 0 100px
+            #p3
+                margin: 10px 0 0 110px
+            #p4
+                margin: 10px 0 0 120px
+            #p5
+                margin: 10px 0 0 110px
+            #p6
+                margin: 10px 0 0 120px
+
+    .work,.play,.study,.exercise,.social,.selfcare
+        width: 350px
+        height: 130px
+
+    .activity
+        margin: 30px 0 100px 0

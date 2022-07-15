@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  background-color: #0f1424;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 160px 0 0 0px;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.owner {
+  background-color: #1c1f4a;
+  width: 250px;
+  height: 470px;
+  border-radius: 10px;
+  margin: 0 25px 0  0;
+}
+
+.profile {
+  background-color: #5847eb;
+  padding: 30px 0 80px 20px;
+  height: 315px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.profile p {
+  font-size: 13px;
+  color: #bdc1ff;
+  margin-bottom: 10px;
+}
+
+.profile h1 {
+  font-weight: 100;
+  font-size: 40px;
+  padding-right: 20px;
+  color: #e1ddf5;
+}
+
+.profile img {
+  width: 65px;
+  border: 3px solid #fff;
+  border-radius: 60px;
+  margin: 0 0 30px 0;
+}
+
+#timeline {
+  padding: 10px 0 20px 30px;
+  line-height: 45px;
+  color: #6f76c8;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#timeline p:hover {
+  color: #fff;
+}
+
+.logobox {
+  margin: 0 25px 50px 0;
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.logobox img {
+  margin: -8px 0 0 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60px;
+}
+
+.logobox .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.logobox .option img {
+  height: 5px;
+  margin: 0 10px 0 0;
+}
+
+.logobox .option img:hover {
+  cursor: pointer;
+}
+
+.logobox .option p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.logobox .time h1 {
+  font-weight: 100;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.logobox .time p {
+  color: #6f76c8;
+  font-size: 14px;
+}
+
+.work, .play, .study, .exercise, .social, .selfcare {
+  background-color: #1c1f4a;
+  border-radius: 10px;
+  height: 185px;
+  width: 250px;
+  margin-top: -20px;
+  position: absolute;
+  padding: 30px 20px 30px 30px;
+}
+
+.activity_box:hover {
+  background-color: #323667;
+  cursor: pointer;
+}
+
+.orange {
+  background-color: #ff8c66;
+}
+
+.skyblue {
+  background-color: #56c2e6;
+}
+
+.red {
+  background-color: #ff5c7c;
+}
+
+.green {
+  background-color: #4acf81;
+}
+
+.violet {
+  background-color: #7536d3;
+}
+
+.yellow {
+  background-color: #f1c65b;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    display: block;
+    margin: 100px 0 0 0;
+  }
+  .top, .bottom {
+    display: block;
+  }
+  .owner {
+    width: 350px;
+    height: 200px;
+    margin: 0;
+  }
+  .profile {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 350px;
+    height: 130px;
+  }
+  .profile h1 {
+    font-size: 24px;
+  }
+  .profile p {
+    margin-top: 10px;
+    line-height: 14px;
+  }
+  .profile img {
+    height: 65px;
+    margin: 0 20px 0 0;
+  }
+  #timeline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 30px;
+    font-size: 18px;
+  }
+  .logobox {
+    width: 350px;
+    height: 160px;
+    margin-right: 0;
+  }
+  .logobox img {
+    margin-left: 270px;
+  }
+  .logobox .option {
+    margin-bottom: 15px;
+  }
+  .logobox .time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .logobox .time h1 {
+    font-size: 33px;
+    margin-bottom: 0;
+  }
+  .logobox .time #p1 {
+    margin: 10px 0 0 90px;
+  }
+  .logobox .time #p2 {
+    margin: 10px 0 0 100px;
+  }
+  .logobox .time #p3 {
+    margin: 10px 0 0 110px;
+  }
+  .logobox .time #p4 {
+    margin: 10px 0 0 120px;
+  }
+  .logobox .time #p5 {
+    margin: 10px 0 0 110px;
+  }
+  .logobox .time #p6 {
+    margin: 10px 0 0 120px;
+  }
+  .work, .play, .study, .exercise, .social, .selfcare {
+    width: 350px;
+    height: 130px;
+  }
+  .activity {
+    margin: 30px 0 100px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
